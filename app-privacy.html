@@ -1,192 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Cafe Bella Citta</title>
-<meta name="description" content="Privacy Policy for Cafe Bella Citta app. No accounts, no analytics, no ads. Local-only features with user-initiated sharing.">
-<style>
-  /* Base theme (auto dark-mode) */
-  :root{
-    --bg:#ffffff; --fg:#121417; --muted:#667085; --card:#ffffff; --border:#e6e8eb;
-    --accent:#2563eb; --accent-weak:#eff6ff; --ok:#16a34a; --radius:16px;
-    --shadow:0 10px 30px rgba(2,8,23,.06), 0 2px 6px rgba(2,8,23,.04);
-    --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans";
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#0b0f14; --fg:#e6edf3; --muted:#9aa4af; --card:#0f141b; --border:#1e2630;
-      --accent:#3b82f6; --accent-weak:#0b224a; --shadow:0 12px 28px rgba(0,0,0,.55), 0 2px 8px rgba(0,0,0,.35);
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bella Citta | Privacy Policy</title>
+  <style>
+    :root {
+      --primary: #0a497b;
+      --secondary: #f4f9fc;
+      --text: #222;
+      --accent: #ffb400;
     }
-  }
-
-  /* Layout + typography */
-  *,*::before,*::after{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  :is(h1,h2,h3){scroll-margin-top:80px}
-  body{margin:0; background:var(--bg); color:var(--fg); font-family:var(--sans); line-height:1.65}
-  .wrap{max-width:980px; margin:0 auto; padding:28px 20px 80px}
-
-  /* Header */
-  header.hero{
-    position:relative; border-radius:var(--radius);
-    background:linear-gradient(135deg,var(--accent-weak),transparent), var(--card);
-    border:1px solid var(--border); box-shadow:var(--shadow); padding:28px;
-  }
-  .badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px;
-    border-radius:999px; background:var(--bg); border:1px solid var(--border); color:var(--muted); font-size:12px}
-  h1{margin:.4rem 0 0; font-size:28px; letter-spacing:.2px}
-  .sub{color:var(--muted); margin-top:6px}
-  .chips{display:flex; flex-wrap:wrap; gap:8px; margin:.5rem 0}
-  .chip{padding:6px 10px; border-radius:999px; border:1px solid var(--border); color:var(--muted); font-size:12px}
-
-  /* Main grid */
-  .grid{display:grid; gap:18px; grid-template-columns:1fr}
-  .toc, .card{
-    background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
-    box-shadow:var(--shadow); padding:20px;
-  }
-  @media (min-width:900px){
-    .grid{grid-template-columns:320px 1fr}
-    .toc{position:sticky; top:20px; height:max-content}
-  }
-  .toc h2{font-size:14px; margin:0 0 10px; color:var(--muted); text-transform:uppercase; letter-spacing:.12em}
-  .toc a{display:block; color:var(--fg); text-decoration:none; padding:8px 10px; border-radius:10px}
-  .toc a:hover{background:var(--accent-weak)}
-
-  /* Content */
-  h2{font-size:20px; margin:6px 0 10px}
-  p{margin:.5rem 0 1rem}
-  ul{margin:.2rem 0 1rem 1.2rem}
-  code{font-family:var(--mono); font-size:.9em; background:rgba(125,125,125,.12); padding:.2em .45em; border-radius:8px}
-  a{color:var(--accent)}
-  hr{border:0; border-top:1px solid var(--border); margin:24px 0}
-  .foot{margin-top:26px; font-size:13px; color:var(--muted)}
-</style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      background: var(--secondary);
+      color: var(--text);
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), #08375d);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 0.5px;
+    }
+    header p {
+      margin: 8px 0 0;
+      opacity: 0.9;
+      font-size: 1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 40px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+    ul, ol {
+      margin: 12px 0 12px 25px;
+    }
+    li { margin-bottom: 6px; }
+    p { margin: 10px 0; font-size: 1rem; }
+    strong { color: var(--primary); }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 50px;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      main { padding: 25px 20px; }
+      header h1 { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
-  <div class="wrap" role="document">
-    <header class="hero" role="banner" aria-labelledby="pp-title">
-      <div class="badge" aria-label="Document status"><span>Privacy Policy</span><span>•</span><span style="color:var(--ok);font-weight:600">Up to date</span></div>
-      <h1 id="pp-title">Cafe Bella Citta — Privacy Policy</h1>
-      <p class="sub">Effective date: October 04, 2025</p>
-      <div class="chips" aria-label="Highlights">
-        <div class="chip">No accounts</div><div class="chip">No analytics</div><div class="chip">No ads</div><div class="chip">Local features</div><div class="chip">User-initiated sharing</div>
-      </div>
-      <div class="foot">Contact: <a href="mailto:support@bellacitta.space">support@bellacitta.space</a> • ☎️ +212690249161</div>
-    </header>
 
-    <main class="grid" role="main">
-      <!-- Table of contents -->
-      <nav class="toc" aria-label="Table of contents">
-        <h2>Contents</h2>
-        <a href="#about">1. About this app</a>
-        <a href="#collection">2. Data we collect</a>
-        <a href="#local">3. Data you provide (local)</a>
-        <a href="#notifs">4. Notifications & Calendar</a>
-        <a href="#sharing">5. Sharing & third-party apps</a>
-        <a href="#backups">6. Backups</a>
-        <a href="#children">7. Children</a>
-        <a href="#retention">8. Data retention & control</a>
-        <a href="#security">9. Security</a>
-        <a href="#changes">10. Changes</a>
-        <a href="#contact">11. Contact</a>
-      </nav>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Last Updated: October 2025</p>
+  </header>
 
-      <!-- Content -->
-      <div>
-        <section id="about" class="card" aria-labelledby="about-h">
-          <h2 id="about-h">1. About this app</h2>
-          <p><strong>Cafe Bella Citta</strong> (“we”, “our app”) respects your privacy. The app is designed to work <strong>without accounts, ads, analytics, or a backend server</strong>. All core features run <strong>locally on your device</strong>.</p>
-          <p><strong>What you can do</strong>:</p>
-          <ul>
-            <li>View the menu and categories, search items, and save favorites.</li>
-            <li>See photos, news, and upcoming events.</li>
-            <li>Write local reviews stored only on your device.</li>
-            <li>Request a table reservation by composing a message in WhatsApp or your email app.</li>
-            <li>Optionally add a one-time reminder and open your Calendar app with prefilled details.</li>
-            <li>Open Google Maps to view the café’s location.</li>
-          </ul>
-        </section>
+  <main>
+    <p>Welcome to <strong>Bella Citta</strong>. We value your privacy and are committed to being transparent about how we collect, use, and protect your information.</p>
 
-        <section id="collection" class="card" aria-labelledby="collection-h">
-          <h2 id="collection-h">2. Data we collect</h2>
-          <p><strong>We do not collect, store, or transmit any personal data to our servers.</strong> We do <strong>not</strong> use analytics, advertising SDKs, or third-party data collectors.</p>
-        </section>
+    <h2>1. Information We Collect</h2>
+    <p>The app collects limited data that you manually provide through forms, such as:</p>
+    <ul>
+      <li><strong>Name</strong> – to identify your reservation</li>
+      <li><strong>Phone number</strong> – for contact purposes</li>
+      <li><strong>Date & Time</strong> – for scheduling</li>
+      <li><strong>Notes / Message</strong> – optional details</li>
+    </ul>
+    <p>All of this information is stored <strong>locally on your device</strong> and is <strong>never uploaded</strong> to any external server.</p>
 
-        <section id="local" class="card" aria-labelledby="local-h">
-          <h2 id="local-h">3. Data you provide (handled locally)</h2>
-          <ul>
-            <li><strong>Reservation details</strong> (name, date, time, phone, notes) are used only to create a message you can send yourself via WhatsApp or your email app. <em>We do not receive any messages.</em></li>
-            <li><strong>Reviews & favorites</strong> are stored locally on your device using Room and SharedPreferences. There is no cloud sync.</li>
-            <li><strong>Last-used name & phone</strong> may be saved locally to prefill the reservation form for your convenience.</li>
-          </ul>
-        </section>
+    <h2>2. How We Use Your Data</h2>
+    <p>Your data is used only for essential app functionality:</p>
+    <ul>
+      <li>To create a reservation message you can send via WhatsApp or Email.</li>
+      <li>To save your favorites or reviews locally.</li>
+    </ul>
+    <p>We <strong>do not</strong> use your data for advertising, analytics, or tracking.</p>
 
-        <section id="notifs" class="card" aria-labelledby="notifs-h">
-          <h2 id="notifs-h">4. Notifications & Calendar</h2>
-          <ul>
-            <li>The app may create a <em>one-time local reminder</em> for your reservation. On Android 13+, we request notification permission; you can disable notifications anytime in system settings.</li>
-            <li>If you choose “Add to Calendar,” the app opens your Calendar with prefilled event details. We do not read or modify your calendar data.</li>
-          </ul>
-        </section>
+    <h2>3. Data Storage & Security</h2>
+    <p>All data remains on your device. Bella Citta does not use external databases, cloud servers, or background synchronization. The app stores data securely using standard Android local storage methods (SharedPreferences / Room).</p>
 
-        <section id="sharing" class="card" aria-labelledby="sharing-h">
-          <h2 id="sharing-h">5. Sharing & third-party apps (user-initiated)</h2>
-          <ul>
-            <li>WhatsApp and your email app are launched via Android intents <strong>only at your request</strong>. Any data you share this way is governed by those apps’ privacy policies.</li>
-            <li>Google Maps may be opened to show the café location. The app does not collect or track your location.</li>
-          </ul>
-        </section>
+    <h2>4. Data Sharing</h2>
+    <p>We do <strong>not share</strong> any data with third parties.</p>
+    <p>When you choose to send a message via WhatsApp or Email, the app only opens those apps with your message pre-filled — no data is transmitted automatically.</p>
 
-        <section id="backups" class="card" aria-labelledby="backups-h">
-          <h2 id="backups-h">6. Backups</h2>
-          <!-- CORRECTED to match allowBackup="false" -->
-          <p>We <strong>disable Android cloud backups</strong> for this app. Reviews, favorites, and form details are stored locally on your device and are <strong>not included</strong> in Android cloud backups. You can remove all local data anytime by clearing app data or uninstalling the app.</p>
-        </section>
+    <h2>5. Permissions Used</h2>
+    <ul>
+      <li><strong>POST_NOTIFICATIONS</strong> – used to show optional reminders (requires user consent).</li>
+    </ul>
+    <p>No other permissions (location, contacts, camera, or storage) are requested or required.</p>
 
-        <section id="children" class="card" aria-labelledby="children-h">
-          <h2 id="children-h">7. Children</h2>
-          <p>This app is <strong>not directed to children under 13</strong> and does not knowingly collect children’s personal data.</p>
-        </section>
+    <h2 id="data-deletion">6. Data Deletion</h2>
+    <p>You can delete all your data at any time. Since it’s stored locally, follow these steps:</p>
+    <ol>
+      <li>Open your phone’s <strong>Settings</strong>.</li>
+      <li>Go to <strong>Apps → Bella Citta → Storage</strong>.</li>
+      <li>Tap <strong>Clear Data</strong>.</li>
+    </ol>
+    <p>This will remove all reservations, notes, and favorites. You can also delete individual reviews or favorites inside the app.</p>
 
-        <section id="retention" class="card" aria-labelledby="retention-h">
-          <h2 id="retention-h">8. Data retention & control</h2>
-          <p>All stored data remains <strong>only on your device</strong>. You can delete individual reviews/favorites within the app (where available), or remove all app data anytime by:</p>
-          <ul>
-            <li><code>Settings → Apps → Cafe Bella Citta → Storage → Clear data</code>, or</li>
-            <li>Uninstalling the app.</li>
-          </ul>
-        </section>
+    <h2>7. Children’s Privacy</h2>
+    <p>Bella Citta is intended for general audiences and does not knowingly collect data from children under 13.</p>
 
-        <section id="security" class="card" aria-labelledby="security-h">
-          <h2 id="security-h">9. Security</h2>
-          <p>Because we do not operate a backend server, there is <strong>no server-side processing</strong> and <strong>no remote data transfer</strong>. Local data stays on your device.</p>
-        </section>
+    <h2>8. Policy Updates</h2>
+    <p>We may update this policy periodically. Any changes will be reflected with a new “Last Updated” date above.</p>
 
-        <section id="changes" class="card" aria-labelledby="changes-h">
-          <h2 id="changes-h">10. Changes</h2>
-          <p>We may update this policy as features evolve. The “Effective date” above will always show the latest version. Updates will be provided inside the app and/or at our official URL.</p>
-        </section>
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions or concerns about privacy, contact us:</p>
+    <p>
+      📧 <a href="mailto:contact@bellacitta.space">contact@bellacitta.space</a><br />
+      🌐 <a href="https://bellacitta.space">https://bellacitta.space</a>
+    </p>
+  </main>
 
-        <section id="contact" class="card" aria-labelledby="contact-h">
-          <h2 id="contact-h">11. Contact</h2>
-          <p>If you have any questions or privacy requests, contact us at:
-            <br><strong><a href="mailto:support@bellacitta.space">support@bellacitta.space</a> • ☎️ +212690249161</strong></p>
-          
-        </section>
-      </div>
-    </main>
+  <footer>
+    © 2025 Bella Citta | Designed with ❤️ for your comfort | 
+    <a href="mailto:contact@bellacitta.space">Contact Us</a>
+  </footer>
 
-    <footer class="wrap" role="contentinfo" style="padding-top:0">
-      <hr>
-      <p class="foot">© <span id="y"></span> Cafe Bella Citta. All rights reserved.</p>
-    </footer>
-  </div>
-<script>
-  // Footer year
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
